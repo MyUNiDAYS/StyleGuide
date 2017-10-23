@@ -13,7 +13,19 @@ namespace UD.Core
 	///		sealed by default
 	///		internal (no explicit modifier) by default
 	///		Braces on new lines
+	///		No line wrapping for : extends/implements
+	///		Ordering of contents:
+	///			private members
+	///			public members
+	///			constructors
+	///			public and private methods, placed in a logical order
+	///			Interface implementations to be in the same order as on the interface
+	/// 
+	/// Attributes
+	///		Prefer one per line, rather than comma separated
 	/// </summary>
+	[Attribute]
+	[Attribute]
 	sealed class StyleGuide : IDisposable
 	{
 		/// <summary>
@@ -21,6 +33,7 @@ namespace UD.Core
 		///		Lower case first letter
 		///		Camel Casing
 		///		No explicit private modifier
+		///		Placed at top of class
 		/// </summary>
 		string anExamplePrivateField;
 
@@ -28,6 +41,7 @@ namespace UD.Core
 		/// Public fields
 		///		Upper case first letter
 		///		Camel Casing
+		///		Placed at top of class, after private members
 		/// </summary>
 		public string AnExamplePublicField;
 
@@ -35,6 +49,7 @@ namespace UD.Core
 		/// Public Property
 		///		Upper case first letter
 		///		Camel Casing
+		///		Place at top of class, after private members
 		/// </summary>
 		public string PublicProperty { get; set; }
 
@@ -45,11 +60,21 @@ namespace UD.Core
 		string getter => "example;";
 
 		/// <summary>
+		/// Constructors
+		///		Next in class after public members
+		/// </summary>
+		public void StyleGuide()
+		{
+			
+		}
+
+		/// <summary>
 		/// Private method
 		///		Upper case first letter
 		///		Camel Casing
 		///		No explicit private modifier
 		///		Braces on new lines
+		///		Below constructors within class
 		/// </summary>
 		void PrivateMethod()
 		{
@@ -59,11 +84,11 @@ namespace UD.Core
 			// explicit this. for member calls
 			this.PrivateMethod();
 
-			// No braces for single line IFs (all blocks)
+			// No braces for single line IFs (same for all blocks)
 			if (this.anExamplePrivateField == "some value")
 				this.anExamplePrivateField = "some other value";
 
-			// No braces for single line LOCKS (all blocks)
+			// No braces for single line LOCKS (same for all blocks)
 			lock (this.anExamplePrivateField)
 				this.anExamplePrivateField = "some other value";
 
@@ -86,22 +111,25 @@ namespace UD.Core
 			}
 
 			// Local variables
-			//		Prefer var of explicit types
+			//		Prefer var over explicit types
 			//		Variabes should have semantic names
 			//		Lower case first letter
 			//		Camel Case
 			var ageInYears = 21;
 
 			// DateTimes
-			//		Named as eventOn
-			//		Always specify as UTC
+			//		Named as <event>On, eg. bornOn, startedOn, endsOn
+			//		Always specify as UTC when new()ing a DateTime
 			var bornOn = new DateTime(2017, 10, 23, 12, 32, 45, DateTimeKind.UTC);
+
+
 		}
 
 
 		/// <summary>
 		/// Methods with return values
 		///		Prefer semantic abstract data types to wrap multiple return values, over OUT or REF arguments
+		///		Obey CQS, don't cause side effects and return a value where possible (except operation results)
 		/// </summary>
 		SomeAbstractType PerformGetOperation()
 		{
@@ -114,19 +142,33 @@ namespace UD.Core
 			};
 		}
 
-
-		sealed class SomeAbstractType
+		/// <summary>
+		/// Static methods
+		///		Make methods static where possible
+		/// </summary>
+		static void DoAThing()
 		{
-			public string ReturnValue1 { get; set; }
-			public int ReturnValue2 { get; set; }
+			// no references in here to `this.`
 		}
-
+		
 		/// <summary>
 		/// No #Regions around Interface Implementations, or at all
 		/// </summary>
 		public void Dispose()
 		{
 			throw new NotImplementedException();
+		}
+
+
+		/// <summary>
+		/// Private classes
+		///		Encapsulate private classes that are only used for internal (to the parent class) data, rather than putting them outside the class, available for other uses
+		///		Place them at the bottom of the file
+		/// </summary>
+		sealed class SomeAbstractType
+		{
+			public string ReturnValue1 { get; set; }
+			public int ReturnValue2 { get; set; }
 		}
 	}
 }
