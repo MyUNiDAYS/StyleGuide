@@ -74,7 +74,28 @@ namespace UD.Core
 				// do something
 			}
 
+			// Use braces for the THEN/ELSE block of an IF when it only has one line, when the other block is multiline (and has braces)
+			if (this.anExamplePrivateField == "some value")
+			{
+				this.anExamplePrivateField = "some other value";
+			}
+			else
+			{
+				this.anExamplePrivateField = "some different value";
+				this.AnExamplePublicField = "a new value";
+			}
 
+			// Local variables
+			//		Prefer var of explicit types
+			//		Variabes should have semantic names
+			//		Lower case first letter
+			//		Camel Case
+			var ageInYears = 21;
+
+			// DateTimes
+			//		Named as eventOn
+			//		Always specify as UTC
+			var bornOn = new DateTime(2017, 10, 23, 12, 32, 45, DateTimeKind.UTC);
 		}
 
 
