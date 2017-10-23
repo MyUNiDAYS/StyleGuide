@@ -4,7 +4,7 @@
 #selector
 {
 	// Rules
-	//	Note the below whitespacing
+	//	Note the whitespacing; `property: value;`
 	//	Rules that belong to the selector are placed above nested selectors
 	background-color: green;
 
@@ -17,9 +17,16 @@
 
 	// Nested selectors
 	//	Placed below rules for the current selecor
-	p
+	ul
 	{
 		color: red;
+	}
+
+	// Nested selectors
+	//	Try to reduce nesting where possible, e.g. this li doesnt need to be in the above ul, as thats an implicit html structure
+	li
+	{
+		border: 1px solid #000;
 	}
 }
 

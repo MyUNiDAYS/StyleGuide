@@ -78,6 +78,11 @@ namespace UD.Core
 		/// </summary>
 		void PrivateMethod()
 		{
+		}
+
+
+		void GeneralSyntax()
+		{
 			// explicit this. for member access
 			this.anExamplePrivateField = "new value";
 
@@ -123,8 +128,35 @@ namespace UD.Core
 			var bornOn = new DateTime(2017, 10, 23, 12, 32, 45, DateTimeKind.UTC);
 
 
+			var listOfWords = new[] { "one", "two", "three" };
+
+			// Keep "LINQ" lambas legible with clear formatting
+			listOfWords
+				.Where(item => item.Length <= 3)
+				.Select(item => item[0])
+				.OrderBy(item => item)
+				.ToArray();
 		}
 
+
+		/// <summary>
+		/// Methods that contain logic
+		/// </summary>
+		int CyclomaticComplexity()
+		{
+			// Keep nesting to a minimum, avoid redundant elses
+
+			if (this.anExamplePrivateField == null)
+				return 0;
+			
+			if (this.AnExamplePublicField == null)
+				return 0;
+			
+			// Keep logic inside IFs simple.
+			// If it is complex or involves multiple operands, consider using local variables
+			if (this.anExamplePrivateField == "winner" && this.AnExamplePublicField = "Chicken Dinner")
+				return 10;
+		}
 
 		/// <summary>
 		/// Methods with return values
