@@ -1,0 +1,34 @@
+
+// Selectors
+//	Braces on a new line
+#selector
+{
+	// Rules
+	//	Note the below whitespacing
+	//	Rules that belong to the selector are placed above nested selectors
+	background-color: green;
+
+	// Pseudo selectors and & rules
+	//	Come below rules and above nested selectors
+	&:before
+	{
+		content: '';
+	}
+
+	// Nested selectors
+	//	Placed below rules for the current selecor
+	p
+	{
+		color: red;
+	}
+}
+
+
+// Mutliple selectors
+//	Each on a new line
+//	leading comma on the 2nd+ item (makes reading diffs easier)
+h1
+,h2
+,h3
+{
+}
