@@ -2,6 +2,7 @@
 using System;
 
 // Namespace next
+// Braces on new lines
 namespace UD.Core
 {
 	// Tabs over spaces
@@ -11,6 +12,7 @@ namespace UD.Core
 	/// Classes
 	///		sealed by default
 	///		internal (no explicit modifier) by default
+	///		Braces on new lines
 	/// </summary>
 	sealed class StyleGuide : IDisposable
 	{
@@ -47,6 +49,7 @@ namespace UD.Core
 		///		Upper case first letter
 		///		Camel Casing
 		///		No explicit private modifier
+		///		Braces on new lines
 		/// </summary>
 		void PrivateMethod()
 		{
