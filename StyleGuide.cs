@@ -203,4 +203,30 @@ namespace UD.Core
 			public int ReturnValue2 { get; set; }
 		}
 	}
+	
+	/// <summary>
+	/// Enums
+	/// </summary>
+	enum MyOptions
+	{
+		// Prefer to specify the first value as explicitly non-zero, so you can tell the difference 
+		// from default(MyOptions), unless it truly makes sense to have a default / "null" value
+		OptionA = 1,
+		OptionB = 2,
+		OptionC = 3
+	}
+	
+	// Specify [Flags] when you're intending to use the enum as a flag set
+	[Flags]
+	enum FlagOptions
+	{
+		// powers of two for the canonical values
+		OptionA = 1,
+		OptionB = 2,
+		OptionC = 4,
+		
+		// specify combinations only if they have semantic value on their own
+		// don't calculate their value manually
+		StandardOptions = OptionB | OptionC
+	}
 }
