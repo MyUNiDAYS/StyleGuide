@@ -55,7 +55,7 @@ namespace UD.Core
 
 		/// <summary>
 		/// Getter only property
-		///		Prefer labmdas over { get { return "example"; } } where sensible
+		///		Prefer lambdas over { get { return "example"; } } where sensible
 		/// </summary>
 		string getter => "example;";
 
@@ -64,8 +64,7 @@ namespace UD.Core
 		///		Next in class after public members
 		/// </summary>
 		public void StyleGuide()
-		{
-			
+		{		
 		}
 
 		/// <summary>
@@ -130,7 +129,7 @@ namespace UD.Core
 
 			var listOfWords = new[] { "one", "two", "three" };
 
-			// Keep "LINQ" lambas legible with clear formatting
+			// Keep "LINQ" lambdas legible with clear formatting
 			listOfWords
 				.Where(item => item.Length <= 3)
 				.Select(item => item[0])
