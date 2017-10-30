@@ -58,7 +58,7 @@ SELECT
 	field_one,
 	field_two
 FROM
-	schema_name.table_name
+	schema_name.table_name;
 
 -- Id field should be of type uuid
 ALTER TABLE schema_name.table_name ADD id uuid NOT NULL;
