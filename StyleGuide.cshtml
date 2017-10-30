@@ -1,0 +1,16 @@
+@* Using's at the top *@
+
+@using System
+
+@* @inherits Next *@
+
+@inherits RazorView<IEnumerable<object>>
+
+<ul>
+@* keep Loops and IFs indented -1, so that the markup is generated with correct indentation *@
+@foreach(var thing in ViewModel)
+{
+	<li>@thing</li>
+}
+
+</ul>
