@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Namespaces declared first inside the top level node-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+    <!--
+        - ID name space declared first
+        - Followed by style
+        - Followed by android:layout_width and android:layout_height
+        - Followed by android:layout_* (the rest)
+        - Followed by android:*
+        - Followed by tools:*
+     -->
+    <TextView
+            android:id="@+id/copy_code_field"
+            style="@style/CopyCodeText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/copy_code_button"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/copy_code_button"
+            android:layout_marginLeft="@dimen/medium_margin"
+            android:layout_marginRight="-2dp"
+            android:layout_toLeftOf="@+id/copy_code_button"
+            android:background="@drawable/copy_code_field_background_selector"
+            android:gravity="center"
+            android:paddingLeft="2dp"
+            android:textSize="16sp"
+            tools:text="ABC123"/>
+
+    <!--
+        - Dimensions are specified in dp (24dp = 72px)
+        - Dimensions should prefer dimen references
+        - Fonts specified in sp
+        - style references should be used where possible
+    -->
+
+</RelativeLayout>
