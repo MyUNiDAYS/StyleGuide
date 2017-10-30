@@ -9,8 +9,8 @@
 UPDATE
 	[schema].[Table]
 SET
-	[FieldOne] = 'Thing',
-	[FieldTwo] = GETDATE()
+	[FieldOne] = 'Thing'
+	,[FieldTwo] = GETDATE()
 WHERE
 	[Name] = 'name'
 	AND [Description] = 'description'
@@ -33,8 +33,8 @@ ALTER TABLE [schema].[Thing] ADD [Id] UNIQUEIDENTIFIER NOT NULL
 
 -- Names (field, table, schema) should be wrapped in []
 SELECT
-	[FieldOne],
-	[FieldTwo]
+	[FieldOne]
+	,[FieldTwo]
 FROM
 	[schema].[Table]
 
@@ -55,8 +55,8 @@ ALTER TABLE [schema].[Thing] ADD [Id] UNIQUEIDENTIFIER NOT NULL
 
 -- Every statement should end with a semi-colon
 SELECT
-	field_one,
-	field_two
+	field_one
+	,field_two
 FROM
 	schema_name.table_name;
 
