@@ -1,12 +1,13 @@
 
 // Selectors
 //	Braces on a new line
-#selector
+//	Use class names to identify elements where ever possible to promote re-usability
+.selector
 {
 	// Rules
 	//	Note the whitespacing; `property: value;`
 	//	Rules that belong to the selector are placed above nested selectors
-	background-color: green;
+	background-color: #00FF00;
 
 	// Pseudo selectors and & rules
 	//	Come below rules and above nested selectors
@@ -16,17 +17,89 @@
 	}
 
 	// Nested selectors
-	//	Placed below rules for the current selecor
+	//	Placed below rules for the current selector
 	ul
 	{
-		color: red;
+		color: #FF0000;
 	}
 
 	// Nested selectors
-	//	Try to reduce nesting where possible, e.g. this li doesnt need to be in the above ul, as thats an implicit html structure
+	//	Try to reduce nesting where possible, e.g. this li doesn't need to be in the above ul, as thats an implicit html structure
 	li
 	{
 		border: 1px solid #000;
+	}
+
+	// Nested selectors via classname
+	//	Where possible use classnames rather than tag selectors. Tag selectors are fine, but this allows you to be more descriptive	with your markup
+	//	Use the `>` child selector wherever possible. This will help prevent styles being applied to nested styles elsewhere.
+	> .selector-list
+	{
+		color: #FF0000;
+
+		> .selector-list-item
+		{
+			border: 1px solid #000;
+		}
+	}
+}
+
+// Component selectors
+//	Try and make your classes re-usable. Think of each part of markup as a lego block that can be reused in the markup
+//	in any order and not inherit or bleed styles out to other components. This also helps reduce excessive css nesting
+.perk-hero
+{
+	> .image-holder
+	{
+
+	}
+}
+
+.perk-flag
+{
+	&::after
+	{
+
+	}
+}
+
+.perk-logo
+{
+	> .image-holder
+	{
+
+	}
+}
+
+.perk-discount
+{
+
+}
+
+// Variants/Modifiers
+//	When requiring a variation of an existing style, such as a color or size, use the following pattern
+.button
+{
+	&.-small
+	{
+		width: 30%;
+	}
+
+	&.-medium
+	{
+		width: 50%;
+	}
+
+	&.-primary
+	{
+		background-color: #1DD577;
+		color: #FFFFFF;
+	}
+
+	&.-secondary
+	{
+		background-color: #000000;
+		color: #FF0000;
 	}
 }
 
