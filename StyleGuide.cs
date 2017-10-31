@@ -52,7 +52,7 @@ namespace UD.Core
 		///		Place at top of class, after private members
 		/// 	Prefer set specific set method and lambda Getter only property to avoid easy class mutation
 		/// </summary>
-		 public string PublicProperty { get; set; }
+		public string PublicProperty { get; set; }
 
 		/// <summary>
 		/// Getter only property
