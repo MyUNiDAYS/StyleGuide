@@ -45,11 +45,14 @@ namespace UD.Core
 		/// </summary>
 		public string AnExamplePublicField;
 
-		// /// <summary>
-		// /// Public Property
-		// /// Don't use. If you need to mutate the class, consider a method. If you need a Public Get, use the Lambda style.
-		// /// </summary>
-		// public string PublicProperty { get; set; }
+		/// <summary>
+		/// Public Property
+		///		Upper case first letter
+		///		Camel Casing
+		///		Place at top of class, after private members
+		/// 	Prefer set specific set method and lambda Getter only property to avoid easy class mutation
+		/// </summary>
+		 public string PublicProperty { get; set; }
 
 		/// <summary>
 		/// Getter only property
