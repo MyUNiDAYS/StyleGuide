@@ -30,13 +30,25 @@ ALTER TABLE [schema].[Thing] ADD [Id] UNIQUEIDENTIFIER NOT NULL
 -- Schema = lower case
 -- Table = UpperCamelCase
 -- Field = UpperCamelCase
+-- Params = lowerCamelCase
+-- Table aliases = lower case
 
 -- Names (field, table, schema) should be wrapped in []
 SELECT
-	[FieldOne]
-	,[FieldTwo]
+	t.[FieldOne]
+	,t2.[FieldTwo]
 FROM
-	[schema].[Table]
+	[schema].[Table] t
+INNER JOIN
+	[schema].[TableTwo] t2 ON t2.[Id] = t.[ExternalId]
+WHERE
+	t.[OtherField] = 'something'
+ORDER BY
+	t2.[FieldTwo] DESC
+OFFSET
+	@offset ROWS
+FETCH NEXT
+	@pageSize ROWS ONLY
 
 -- Data types capitalised
 ALTER TABLE [schema].[Thing] ADD [NewField] INT NOT NULL
