@@ -27,12 +27,12 @@ function query() {
 Use camelCase when naming objects, functions, and instances.
 ```
 // bad
-const OBJEcttsssss = {};
-const this_is_my_object = {};
+var OBJEcttsssss = {};
+var this_is_my_object = {};
 function c() {}
 
 // good
-const thisIsMyObject = {};
+var thisIsMyObject = {};
 function thisIsMyFunction() {}
 ```
 
@@ -54,7 +54,7 @@ class User {
   }
 }
 
-const good = new User({
+var good = new User({
   name: 'yup',
 });
 ```
@@ -266,13 +266,13 @@ var foo = function longDescriptionOfWhatThisFunctionIs() {
 Prefix jQuery object variables with a `$`
 ```
 // bad
-const sidebar = $('.sidebar');
+var sidebar = $('.sidebar');
 
 // good
-const $sidebar = $('.sidebar');
+var $sidebar = $('.sidebar');
 
 // good
-const $sidebarBtn = $('.sidebar-btn');
+var $sidebarBtn = $('.sidebar-btn');
 ```
 
 Cache jQuery lookups. - UNSURE ABOUT THIS SECTION
@@ -290,7 +290,7 @@ function setSidebar() {
 
 // good
 function setSidebar() {
-  const $sidebar = $('.sidebar');
+  var $sidebar = $('.sidebar');
   $sidebar.hide();
 
   // ...
