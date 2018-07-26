@@ -59,14 +59,17 @@ var good = new User({
 });
 ```
 
-Do not use trailing or leading underscores.
+Do not use trailing or leading underscores in public methods or properties. 
+Only private methods and properties start with single leading underscore. 
 ```
 // bad
 this.__firstName__ = 'Panda';
 this.firstName_ = 'Panda';
+
+// good for private only
 this._firstName = 'Panda';
 
-// good
+// good for public only
 this.firstName = 'Panda';
 ```
 
@@ -141,6 +144,15 @@ if (collection.length) {
 if (collection.length > 0) {
   // ...
 }
+```
+If specifically checking for null or undefined
+```
+//bad
+if (thing !== null && thing !== undefined)
+
+//good
+if (thing != null)
+
 ```
 
 #### Blocks
@@ -275,7 +287,7 @@ var $sidebar = $('.sidebar');
 var $sidebarBtn = $('.sidebar-btn');
 ```
 
-Cache jQuery lookups. - UNSURE ABOUT THIS SECTION
+Cache jQuery lookups
 ```
 // bad
 function setSidebar() {
