@@ -8,28 +8,6 @@ Anywhere you are using Javascript to attach to the DOM, use js-hooks instead of 
 This will keep your JS logic seperate from the styling layout making it easier to change CSS properties 
 and assign JS logic to many CSS component types.
 
-### JS Classes
-Where appropriate, don't add more JS to `registerPageScript` scripts. Take the feature you are about 
-to write and separate it out into its own class. The benefits of this are.
-
-* You can reuse this functionality in other areas of the site without duplicating code
-* It becomes testable
-* At a later date, it can be used in a javascript modular package library
-* It makes you think about how this can be made more component based for the future
-
-WHen assigning to the window use the UD prefix so it is easily found in the window object.
-
-`window.UDUserAgent = Class.extend({`
-
-An example of this can be seen in [UserAgent.js](UserAgent.js).
-
-### Jest Testing Framework
-We can now create JS tests using the Jest testing framework.
-
-An example test is [UserAgent.test.js](UserAgent.test.js).
-
-Any new classes being built should always have an associated test with them.
-
 ### JS Code Styles
 
 #### Naming Conventions
@@ -90,45 +68,6 @@ this._firstName = 'Panda';
 
 // good
 this.firstName = 'Panda';
-```
-
-#### jQuery
-Prefix jQuery object variables with a `$`
-```
-// bad
-const sidebar = $('.sidebar');
-
-// good
-const $sidebar = $('.sidebar');
-
-// good
-const $sidebarBtn = $('.sidebar-btn');
-```
-
-Cache jQuery lookups.
-```
-// bad
-function setSidebar() {
-  $('.sidebar').hide();
-
-  // ...
-
-  $('.sidebar').css({
-    'background-color': 'pink',
-  });
-}
-
-// good
-function setSidebar() {
-  const $sidebar = $('.sidebar');
-  $sidebar.hide();
-
-  // ...
-
-  $sidebar.css({
-    'background-color': 'pink',
-  });
-}
 ```
 
 #### Properties
@@ -321,4 +260,43 @@ var foo = function longDescriptionOfWhatThisFunctionIs() {
 	// ...
 };
 
+```
+
+#### jQuery
+Prefix jQuery object variables with a `$`
+```
+// bad
+const sidebar = $('.sidebar');
+
+// good
+const $sidebar = $('.sidebar');
+
+// good
+const $sidebarBtn = $('.sidebar-btn');
+```
+
+Cache jQuery lookups. - UNSURE ABOUT THIS SECTION
+```
+// bad
+function setSidebar() {
+  $('.sidebar').hide();
+
+  // ...
+
+  $('.sidebar').css({
+    'background-color': 'pink',
+  });
+}
+
+// good
+function setSidebar() {
+  const $sidebar = $('.sidebar');
+  $sidebar.hide();
+
+  // ...
+
+  $sidebar.css({
+    'background-color': 'pink',
+  });
+}
 ```
