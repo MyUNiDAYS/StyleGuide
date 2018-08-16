@@ -1,4 +1,23 @@
+<p align="center">
+  <img src="../assets/UNiDAYS_Logo.png" />
+</p>
+<br/>
+
 # UNiDAYS Javascript Coding Style Guide
+
+[JS Hooks](#js-hooks)
+
+[JS Code Styles](#js-code-styles)
+  * [Naming Conventions](#naming-conventions)
+  * [Properties](#properties)
+  * [Comparison Operators And Equality](#comparison-operators-and-equality)
+  * [Blocks](#blocks)
+  * [null vs undefined](#null-vs-undefined)
+  * [Arrays](#arrays)
+  * [Strings](#strings)
+  * [Functions](#functions)
+  * [jQuery](#jQuery)
+
 
 ### JS Hooks
 Anywhere you are using Javascript to attach to the DOM, use js-hooks instead of CSS classes. 
@@ -104,7 +123,7 @@ var isJedi = getProp('jedi');
 ```
 
 
-#### Comparison Operators & Equality
+#### Comparison Operators And Equality
 Use `===` and `!==` over `==` and `!=`
 ```
 var i = 100;
@@ -199,7 +218,7 @@ if (test) {
 }
 ```
 
-#### `null` vs `undefined`
+#### null vs undefined
 
 `undefined` means a variable has been declared but has not yet been assigned a value.
 ```
