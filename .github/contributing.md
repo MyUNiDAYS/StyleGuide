@@ -39,7 +39,7 @@ First of all please do a search on the issues already present to see if it's an 
 ### Labels For Issues
 
 | Label       | Purpose             |
-| ------------- |:----------------:| -----:|
+| ------------- |:----------------:|
 | up-for-grabs     | An issue that is ready and has enough information to be picked up  |
 | docs     | An issue that only relates to writing docs |
 | easy     | Difficulty level: any level of experience can pick this issue up |

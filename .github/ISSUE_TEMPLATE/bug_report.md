@@ -22,7 +22,6 @@ Steps to reproduce the behaviour:
 
 What percentage of the time does it reproduce, if you know?
 
-
 **Expected behaviour**
 
 A clear and concise description of what you expected to happen.
