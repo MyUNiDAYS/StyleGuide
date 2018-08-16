@@ -12,12 +12,6 @@ about: Suggest an idea for this project
 - A short but clear and concise description of what you want to happen. 
 - Why would this change be beneficial and for who?
 
-**Breakdown of proposed feature*
-Step-by-step breakdown of the proposed feature with examples 
-
-- 
--
-
 **Prerequisites** 
 Is there anything required that might block the progress of this feature
 
