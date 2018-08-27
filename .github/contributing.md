@@ -22,15 +22,15 @@ This document outlines the different ways you can contribute to the UNiDAYS repo
 
 [Style Guides](#style-guides)
   * [Git Commit Messages](#git-commit-messages)
-  * [Style Guide Files Style Guide](#style-guide-files-style-guide)
+  * [Style Guide Files](#style-guide-files)
 
 ## How Can I Contribute?
 
-### Reporting Bugs :bug:
+### Reporting Bugs
 
 When issuing a bug report please include as many of details on [the bug report template](./ISSUE_TEMPLATE/bug_report.md) as possible. If you find a Closed issue that seems like it is the same thing that you're experiencing, open a new issue and include a link to the original issue in the body of your new one. Please label the any bug report issues with `bug`.
 
-### Suggesting Enhancements 🔎
+### Suggesting Enhancements
 
 Enhancements may include completely new features and minor improvements to existing functionality. Following these guidelines helps maintainers and the community understand your suggestion and find related suggestions.
 
@@ -38,30 +38,30 @@ First of all please do a search on the issues already present to see if it's an 
 
 ### Labels For Issues
 
-| Label       | Purpose             |
-| ------------- |:----------------:|
-| up-for-grabs     | An issue that is ready and has enough information to be picked up  |
-| docs     | An issue that only relates to writing docs |
-| easy     | Difficulty level: any level of experience can pick this issue up |
-| medium     | Difficulty level: some experience of the domain or language will be needed to pick this issue up  |
-| hard     |Difficulty level: a lot of experience of the domain or language will be needed to pick this issue up |
-| insane     | Difficulty level: you need to be a total wizard to figure this out |
-| enhancement      | Making things better but without fixing an issue     |   
-| fix  | Fixing a pre-existing problem with the code      |
+| Label | Purpose |
+| --- |--- |
+| up-for-grabs | An issue that is ready and has enough information to be picked up |
+| docs | An issue that only relates to writing docs |
+| easy | Difficulty level: any level of experience can pick this issue up |
+| medium | Difficulty level: some experience of the domain or language will be needed to pick this issue up |
+| hard |Difficulty level: a lot of experience of the domain or language will be needed to pick this issue up |
+| insane | Difficulty level: you need to be a total wizard to figure this out |
+| enhancement | Making things better but without fixing an issue |
+| fix | Fixing a pre-existing problem with the code |
 
 
-### Pull Requests :thought_balloon:
+### Pull Requests
 
 - Create branch. If there is an issue, have the branch name related to the linked issue, otherwise give it a descriptive name relating to what the work covers. See some examples below.
 
-| PR-prefix       | Purpose             | Example  |
-| ------------- |:----------------:| -----:|
-| issuenumber_     | When it relating to a pre-existing issues | issuenumber_583 |
-| enhancement      | Making things _better_ but without fixing an issue     |   enhancement_improveperformanceofquery |
-| fix  | Fixing a pre-existing problem with the code that isn't an issue      | fix_acceptnullsforinput |
+| PR-prefix | Purpose | Example |
+| --- | --- | --- |
+| issuenumber_ | When it relating to a pre-existing issues | issuenumber_583 |
+| enhancement | Making things _better_ but without fixing an issue | enhancement_improveperformanceofquery |
+| fix | Fixing a pre-existing problem with the code that isn't an issue | fix_acceptnullsforinput |
 
 
-- Open a Pull Request with the details listed in the [pull request template](pull_request_template.md). The sections of this template should show in the body of any new pull request automatically. 
+- Open a Pull Request with the details listed in the [pull request template](../pull_request_template.md). The sections of this template should show in the body of any new pull request automatically. 
 
 - Please ensure that any changes you make comply with our [style guides](#style-guides).
 
@@ -69,7 +69,7 @@ First of all please do a search on the issues already present to see if it's an 
 
 - Make a comment with the pull request in any issues it relates to.
 
-### Your First Code Contribution? :computer:
+### Your First Code Contribution?
 
 We will make efforts to label issues with `beginner` if we think they should only require a few lines of code, and a test or two. This is in order to help those who want to contribute but don't necessarily have much experience in doing so.
 
@@ -86,7 +86,7 @@ We request that, where possible, you stick to the following format for your comm
 
 For reference, [this blog](https://chris.beams.io/posts/git-commit/) encourages a similar style.
 
-### Style Guide Files Style Guide
+### Style Guide Files
 
 - Write all style guides in markdown files.
 - Where possible include contents links at the top.
