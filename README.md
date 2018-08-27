@@ -29,7 +29,7 @@ This is the way UNiDAYS currently work, but we are open to suggestion if you dis
 
 ## Sections
 
-### [JavaScript](./Javascript/README.md)
+### [JavaScript](./Javascript)
 
 The [JavaScript README](./Javascript/README.md) covers our general JavaScript style guidelines including :
 
