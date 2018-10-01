@@ -50,6 +50,7 @@ namespace UD.Core
 		///		Upper case first letter
 		///		Camel Casing
 		///		Place at top of class, after private members
+		/// 	Prefer set specific set method and lambda Getter only property to avoid easy class mutation
 		/// </summary>
 		public string PublicProperty { get; set; }
 
