@@ -48,7 +48,7 @@ If you are interested in contributing to this project, please read through the f
 
 * [Code of Conduct](CODE_OF_CONDUCT.md)
 
-* [Contributing Guidelines](#what-should-i-know-before-i-get-started)
+* [Contributing Guidelines](/.github/contributing.md)
 
 ## Licencing
 
