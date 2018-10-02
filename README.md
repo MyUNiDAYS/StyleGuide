@@ -22,6 +22,7 @@ This is the way UNiDAYS currently work, but we are open to suggestion if you dis
 
 [Sections](#sections)
 * [JavaScript](#javascript)
+* [Swift](#swift)
 
 [Contributing](#sections)
 
@@ -36,6 +37,10 @@ The [JavaScript README](./Javascript/README.md) covers our general JavaScript st
 * **JS Hooks**
 * **JS Code Styles**
 
+### [Swift](./Swift)
+The [Swift README](./iOS/README.md) covers our general Swift style guidelines including:
+* **Code Formatting**
+* **Code Styles**
 
 ## Contributing
 
