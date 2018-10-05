@@ -26,20 +26,19 @@ Think of your CSS in a component based way.
 For example, you should never have to create two different button styles, instead use modifiers.
 
 Prefix class names according to the following:<br> 
-`t-` typography styles<br>
-`c-` component styles<br>
-`l-` layout styles<br>
+`.t-` typography styles<br>
+`.c-` component styles<br>
+`.l-` layout styles<br>
 
 #### Modifiers
 
-Modifiers should be used for giving a component a alternative style. 
-Modifiers should always be prefixed with a hyphen.
+Modifiers should be used for giving a component an alternative style and should always be prefixed with a hyphen.
 
-`c-button -secondary`
+`.-secondary`
 
 #### Nesting
 
-Do not nest selectors unnecessarily. This will increase specificity and limit where else you can use these styles. 
+Do not nest selectors unnecessarily. This will increase specificity and limit the reusability of these styles. 
 
 When nesting, use a child selector where possible.
 
