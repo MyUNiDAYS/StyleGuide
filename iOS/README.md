@@ -87,7 +87,7 @@ enum SomeEnum: Int {
 Let the compiler infer the type for constants. Only specify the specific type when required, such as `CGFloat`.
 #### Preferred:
 ```
-let name: String = "UNiDAYS"
+let name = "UNiDAYS"
 let colour = getMedianColour()
 let width: CGFloat = 15.0
 ```
