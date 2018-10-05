@@ -19,6 +19,10 @@
   * [jQuery](#jQuery)
 
 
+### JS File Naming Convention
+All files should be named using kebab-case where applicable.
+
+
 ### JS Hooks
 Anywhere you are using Javascript to attach to the DOM, use js-hooks instead of CSS classes. 
 
