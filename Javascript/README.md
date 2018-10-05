@@ -5,6 +5,8 @@
 
 # UNiDAYS Javascript Coding Style Guide
 
+[JS File Naming Convention](#js-file-naming-convention)
+
 [JS Hooks](#js-hooks)
 
 [JS Code Styles](#js-code-styles)
