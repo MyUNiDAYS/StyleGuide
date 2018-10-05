@@ -25,7 +25,7 @@ All files should be named using kebab-case where applicable.
 Think of your CSS in a component based way.
 For example, you should never have to create two different button styles, instead use modifiers.
 
-Prefix class names according to the following: 
+Prefix class names according to the following:<br> 
 `t-` typography styles<br>
 `c-` component styles<br>
 `l-` layout styles<br>
