@@ -21,7 +21,9 @@ This is the way UNiDAYS currently work, but we are open to suggestion if you dis
 ## Contents
 
 [Sections](#sections)
+
 * [JavaScript](#javascript)
+* [SQL](#SQL)
 
 [Contributing](#sections)
 
@@ -36,6 +38,12 @@ The [JavaScript README](./Javascript/README.md) covers our general JavaScript st
 * **JS Hooks**
 * **JS Code Styles**
 
+### [SQL](./SQL)
+
+The [SQL README](./SQL/README.md) covers our general SQL style guidelines including :
+
+* **T-SQL**
+* **PL/pgSQL**
 
 ## Contributing
 
