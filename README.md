@@ -21,13 +21,9 @@ This is the way UNiDAYS currently work, but we are open to suggestion if you dis
 ## Contents
 
 [Sections](#sections)
-
 * [JavaScript](#javascript)
-
 * [LESS](#less)
-
-* [SQL](#SQL)
-
+* [SQL](#sql)
 
 [Contributing](#sections)
 
@@ -52,10 +48,11 @@ The [LESS README](./LESS/README.md) covers our general LESS style guidelines inc
 
 ### [SQL](./SQL)
 
-The [SQL README](./SQL/README.md) covers our general SQL style guidelines including :
+The [SQL README](./SQL/StyleGuide.sql) covers our general SQL style guidelines including :
 
-* **T-SQL**
-* **PL/pgSQL**
+* **SQL General**
+* **SQL T-SQL**
+* **SQL PL/pgSQL**
 
 ## Contributing
 
