@@ -63,3 +63,17 @@
 		</tr>
 	</tbody>
 </table>
+
+<%-- Controller action methods should have a single responsibility. If you need multiple submit buttons with different effects, create multiple forms and action methods. --%>
+<form target="/action-method-one">
+	<input type=submit value="Submit One" />
+</form>
+<form target="/action-method-two">
+	<input type=submit value="Submit Two" />
+</form>
+
+<%-- Don't do this. --%>
+<form target="/everything-action-method">
+	<input type=submit value="SaveDataInOneWay" name="action" />
+	<input type=submit value="SaveDataInAnotherWay" name="action" />
+</form>
