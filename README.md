@@ -23,6 +23,7 @@ This is the way UNiDAYS currently work, but we are open to suggestion if you dis
 [Sections](#sections)
 * [JavaScript](#javascript)
 * [LESS](#less)
+* [SQL] (#sql)
 
 [Contributing](#sections)
 
@@ -45,6 +46,13 @@ The [LESS README](./LESS/README.md) covers our general LESS style guidelines inc
 * **LESS File Naming Convention**
 * **LESS Code Styles**
 
+### [SQL](./SQL)
+
+The [SQL README](./SQL/StyleGuide.sql) covers our general SQL style guidelines including :
+
+* ** SQL General**
+* **SQL T-SQL**
+* **SQL PL/pgSQL**
 
 ## Contributing
 
