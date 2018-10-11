@@ -15,6 +15,10 @@ import java.util.Random;
  * package should always precede private
  */
 public class StyleGuide {
+    
+    /** Variables should always be in Camel Case */
+
+    int exampleVariable = 0;
 
     /**
      * Constants which are required to be static should be declared at the top of the class using uppercase snakecasing
@@ -63,6 +67,7 @@ public class StyleGuide {
     /**
      * Where methods spread over multiple lines a single white space should be left at the top of the method to improve readability.
      * Methods should follow the naming convention of verbs at the start with nounds at the end.
+     * They should also be in Camel Case.
      */
     public void scheduleJobIfNeeded() {
 
