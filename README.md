@@ -22,6 +22,7 @@ This is the way UNiDAYS currently work, but we are open to suggestion if you dis
 
 [Sections](#sections)
 * [JavaScript](#javascript)
+* [LESS](#less)
 * [Swift](#swift)
 
 [Contributing](#sections)
@@ -34,10 +35,18 @@ This is the way UNiDAYS currently work, but we are open to suggestion if you dis
 
 The [JavaScript README](./Javascript/README.md) covers our general JavaScript style guidelines including :
 
+* **JS File Naming Convention**
 * **JS Hooks**
 * **JS Code Styles**
 
+### [LESS](./LESS)
+
+The [LESS README](./LESS/README.md) covers our general LESS style guidelines including :
+* **LESS File Naming Convention**
+* **LESS Code Styles**
+
 ### [Swift](./Swift)
+
 The [Swift README](./Swift/README.md) covers our general Swift style guidelines including:
 * **Code Formatting**
 * **Code Styles**

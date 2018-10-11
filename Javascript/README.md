@@ -5,6 +5,8 @@
 
 # UNiDAYS Javascript Coding Style Guide
 
+[JS File Naming Convention](#js-file-naming-convention)
+
 [JS Hooks](#js-hooks)
 
 [JS Code Styles](#js-code-styles)
@@ -17,6 +19,10 @@
   * [Strings](#strings)
   * [Functions](#functions)
   * [jQuery](#jQuery)
+
+
+### JS File Naming Convention
+All files should be named using kebab-case where applicable.
 
 
 ### JS Hooks
