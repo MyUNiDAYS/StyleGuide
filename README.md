@@ -38,7 +38,7 @@ The [JavaScript README](./Javascript/README.md) covers our general JavaScript st
 * **JS Code Styles**
 
 ### [Swift](./Swift)
-The [Swift README](./iOS/README.md) covers our general Swift style guidelines including:
+The [Swift README](./Swift/README.md) covers our general Swift style guidelines including:
 * **Code Formatting**
 * **Code Styles**
 
