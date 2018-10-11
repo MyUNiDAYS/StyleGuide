@@ -24,6 +24,7 @@ This is the way UNiDAYS currently work, but we are open to suggestion if you dis
 * [JavaScript](#javascript)
 * [LESS](#less)
 * [SQL](#sql)
+* [HTML](#html)
 
 [Contributing](#sections)
 
@@ -53,6 +54,18 @@ The [SQL README](./SQL/StyleGuide.sql) covers our general SQL style guidelines i
 * **SQL General**
 * **SQL T-SQL**
 * **SQL PL/pgSQL**
+
+### [HTML](./HTML)
+
+* **Inherits**
+* **Sections**
+* **Scripts**
+* **Loops**
+* **Elements**
+* **CSS Classes**
+* **Partial Views**
+* **Ternary Operators**
+* **Tables**
 
 ## Contributing
 
