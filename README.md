@@ -1,6 +1,6 @@
 <p align="center">
-  <img src="/assets/UNiDAYS_Logo.png" />
-</p>
+   <img src="https://assets1.unidays.world/v5/main/assets/images/logo_v003.svg" width="60%"/>
+ </p>
 <br/>
 
 # UNiDAYS Coding Style Guide
@@ -21,15 +21,25 @@ This is the way UNiDAYS currently work, but we are open to suggestion if you dis
 ## Contents
 
 [Sections](#sections)
+* [Android](#android)
 * [JavaScript](#javascript)
 * [LESS](#less)
 * [Swift](#swift)
+* [SQL](#sql)
+* [HTML](#html)
 
 [Contributing](#sections)
 
 [Licencing](#licencing)
 
 ## Sections
+
+### [Android](./android)
+
+The [Android README](./Android/README.md) covers our general Android style guidelines including :
+
+* **Java Code Styles**
+* **XML Layout File Conventions**
 
 ### [JavaScript](./Javascript)
 
@@ -51,13 +61,33 @@ The [Swift README](./Swift/README.md) covers our general Swift style guidelines 
 * **Code Formatting**
 * **Code Styles**
 
+### [SQL](./SQL)
+
+The [SQL README](./SQL/StyleGuide.sql) covers our general SQL style guidelines including :
+
+* **SQL General**
+* **SQL T-SQL**
+* **SQL PL/pgSQL**
+
+### [HTML](./HTML)
+
+* **Inherits**
+* **Sections**
+* **Scripts**
+* **Loops**
+* **Elements**
+* **CSS Classes**
+* **Partial Views**
+* **Ternary Operators**
+* **Tables**
+
 ## Contributing
 
 If you are interested in contributing to this project, please read through the following documents:
 
 * [Code of Conduct](CODE_OF_CONDUCT.md)
 
-* [Contributing Guidelines](/.github/contributing.md)
+* [Contributing Guidelines](.github/contributing.md)
 
 ## Licencing
 
