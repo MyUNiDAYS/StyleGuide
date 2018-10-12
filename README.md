@@ -22,6 +22,7 @@ This is the way UNiDAYS currently work, but we are open to suggestion if you dis
 ## Contents
 
 [Sections](#sections)
+* [Android](#android)
 * [JavaScript](#javascript)
 * [LESS](#less)
 * [SQL](#sql)
@@ -32,6 +33,13 @@ This is the way UNiDAYS currently work, but we are open to suggestion if you dis
 [Licencing](#licencing)
 
 ## Sections
+
+### [Android](./android)
+
+The [Android README](./Android/README.md) covers our general Android style guidelines including :
+
+* **Java Code Styles**
+* **XML Layout File Conventions**
 
 ### [JavaScript](./Javascript)
 
