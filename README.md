@@ -1,4 +1,3 @@
-
 <p align="center">
    <img src="https://assets1.unidays.world/v5/main/assets/images/logo_v003.svg" width="60%"/>
  </p>
@@ -25,6 +24,7 @@ This is the way UNiDAYS currently work, but we are open to suggestion if you dis
 * [Android](#android)
 * [JavaScript](#javascript)
 * [LESS](#less)
+* [Swift](#swift)
 * [SQL](#sql)
 * [HTML](#html)
 
@@ -52,9 +52,14 @@ The [JavaScript README](./Javascript/README.md) covers our general JavaScript st
 ### [LESS](./LESS)
 
 The [LESS README](./LESS/README.md) covers our general LESS style guidelines including :
-
 * **LESS File Naming Convention**
 * **LESS Code Styles**
+
+### [Swift](./Swift)
+
+The [Swift README](./Swift/README.md) covers our general Swift style guidelines including:
+* **Code Formatting**
+* **Code Styles**
 
 ### [SQL](./SQL)
 
