@@ -23,10 +23,12 @@ File names should be the same name of the parent class within that file.
 
 For example:
 `c-menu-nav.scss`
-```.c-menu-nav.scss
+```
+.c-menu-nav.scss
 {
 	//styles here
-}```
+}
+```
 
 
 
