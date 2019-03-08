@@ -10,6 +10,7 @@
 [SCSS Code Styles](#scss-code-styles)
   * [Naming Conventions](#naming-conventions)
   * [Modifiers](#modifiers)
+  * [Formatting](#formatting)
   * [Nesting](#nesting)
   * [Avoid Tag Selectors](#avoid-tag-selectors)
 
@@ -55,6 +56,29 @@ These classes are used to define the layout of pages and determine how and where
 Modifiers should be used for giving a component an alternative style and should always be prefixed with a double hyphen.
 
 `.--highlight`
+
+#### Formatting
+
+Curly braces should start on a new line 
+
+```
+// Bad
+.l-layout-class {
+	.c-component-nested {
+		float: left;
+	}
+}
+
+// Good
+.l-layout-class
+{
+	> .c-component-nested
+	{
+		float: left;
+	}
+}
+
+```
 
 #### Nesting
 
