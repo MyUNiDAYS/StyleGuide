@@ -1,0 +1,99 @@
+<p align="center">
+   <img src="https://assets1.unidays.world/v5/main/assets/images/logo_v003.svg" width="60%"/>
+ </p>
+<br/>
+
+# UNiDAYS SCSS Coding Style Guide
+
+[SCSS File Naming Convention](#scss-file-naming-convention)
+
+[SCSS Code Styles](#scss-code-styles)
+  * [Naming Conventions](#naming-conventions)
+  * [Modifiers](#modifiers)
+  * [Nesting](#nesting)
+  * [Avoid Tag Selectors](#avoid-tag-selectors)
+
+
+### SCSS File Naming Convention
+
+All files should be named using kebab-case where applicable.
+For example: `c-component-name.scss`
+
+File names should be the same name of the parent class within that file.
+
+For example:
+`c-menu-nav.scss`
+```.c-menu-nav.scss
+{
+	//styles here
+}```
+
+
+
+
+### SCSS Code Styles
+
+#### Naming Conventions
+Think of your CSS in a component based way.
+For example, you should never have to create two different button styles, instead use modifiers.
+
+Prefix class names according to the following:<br> 
+`.t-` typography styles<br>
+`.c-` component styles<br>
+`.l-` layout styles<br>
+
+#### Modifiers
+
+Modifiers should be used for giving a component an alternative style and should always be prefixed with a double hyphen.
+
+`.--highlight`
+
+#### Nesting
+
+Do not nest selectors unnecessarily. This will increase specificity and limit the reusability of these styles. 
+
+When nesting, use a child selector where possible.
+
+```
+// Bad
+.l-example-class
+{
+	.c-example-nested
+	{
+		display: block;
+	}
+}
+
+// Good
+.l-example-class
+{
+	> .c-example-nested
+	{
+		display: block;
+	}
+}
+
+```
+
+#### Avoid Tag Selectors
+
+Use classnames whenever possible. Tag selectors are fine, but they lessen the reusability of your styles and could come at a small performance penalty.
+
+```
+// Bad
+> picture
+{
+	> img
+	{
+	}
+}
+
+// Good
+.c-image-holder
+{
+	> .c-image
+	{
+	}
+}
+
+```
