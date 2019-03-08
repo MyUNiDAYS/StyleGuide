@@ -149,10 +149,13 @@ $monotone: (
 To access the colours in a map use the following SCSS function `map-get($map, $key)`<br>
 For example: 
 ```
-
 .t-title
 {
 	color: map-get($monotone, xxDark)
 }
 
+.c-button
+{
+	border-color: 1px solid map-get($monotone, xxDark)
+}
 ```
