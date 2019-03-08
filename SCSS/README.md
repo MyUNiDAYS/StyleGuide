@@ -13,6 +13,7 @@
   * [Formatting](#formatting)
   * [Nesting](#nesting)
   * [Avoid Tag Selectors](#avoid-tag-selectors)
+  * [Colour Palette](#colour-palette)
 
 
 ### SCSS File Naming Convention
@@ -37,8 +38,7 @@ For example:
 ### SCSS Code Styles
 
 #### Naming Conventions
-Think of your CSS in a component based way.
-For example, you should never have to create two different button styles, instead use modifiers.
+Think of your CSS in a component based way and make your classes as reusable as possible. 
 
 Prefix class names according to the following:<br> 
 `.t-` typography styles<br>
@@ -126,6 +126,33 @@ Use classnames whenever possible. Tag selectors are fine, but they lessen the re
 	> .c-image
 	{
 	}
+}
+
+```
+
+#### Colour Palette
+
+For our colour palettes we make use of SCSS maps to group colours together.  
+
+An example of a colour map that groups all monotone shades together: 
+```
+$monotone: (
+	xxDark: #000000,
+	xDark: #676767,
+	midDark: #999999,
+	base: #cccccc,
+	midLight: #efefef,
+	light: #ffffff
+);
+```
+
+To access the colours in a map use the following SCSS function `map-get($map, $key)`<br>
+For example: 
+```
+
+.t-title
+{
+	color: map-get($monotone, xxDark)
 }
 
 ```
