@@ -8,11 +8,12 @@
 [SCSS File Naming Convention](#scss-file-naming-convention)
 
 [SCSS Code Styles](#scss-code-styles)
-  * [Naming Conventions](#naming-conventions)
+  * [Class Naming Conventions](#class-naming-conventions)
   * [Modifiers](#modifiers)
   * [Formatting](#formatting)
   * [Nesting](#nesting)
   * [Avoid Tag Selectors](#avoid-tag-selectors)
+  * [Mixins Extends and Placeholders](#mixins-extends-and-palceholders)
   * [Colour Palette](#colour-palette)
 
 
@@ -37,7 +38,7 @@ For example:
 
 ### SCSS Code Styles
 
-#### Naming Conventions
+#### Class Naming Conventions
 Think of your CSS in a component based way and make your classes as reusable as possible. 
 
 Prefix class names according to the following:<br> 
@@ -129,6 +130,63 @@ Use classnames whenever possible. Tag selectors are fine, but they lessen the re
 }
 
 ```
+
+#### Mixins Extends and Placeholders
+
+Use these lightly, and only where it makes sense to use them. The aim is not to avoid *all* repetition but to minimise repetition where it is thematically related and/or meaningful to do so.
+
+For example, this is a bad implementation because while border-radius is being repeated, using a mixin for it actually creates more code than neccessary and these two classes are not thematically related. 
+
+```
+// Bad
+@mixin border-radius
+{
+	border-radius: 4px;
+}
+
+> .c-button
+{
+	@include border-radius;
+}
+
+> .c-content-block
+{
+	@include border-radius;
+}
+```
+
+This is a good implementation as the button mixin has a number of properties that are used by all the different button types. The code is thematically related and is avoiding unecessary repetition. 
+
+```
+// Good
+@mixin c-button
+{
+	display: block;
+	box-sizing: border-box;
+	height: 48px;
+	width: 248px;
+	padding: 16px 0;
+	cursor: pointer;
+}
+
+.c-button-primary
+{
+	@include c-button;
+	color: map-get($monotone, light);
+	background-color: map-get($blue, base);
+}
+
+.c-button-secondary 
+{
+	@include c-button;
+	background-color: map-get($monotone, light);
+	color: map-get($blue, base);
+	border: 2px solid map-get($blue, base);
+}
+
+```
+
+
 
 #### Colour Palette
 
