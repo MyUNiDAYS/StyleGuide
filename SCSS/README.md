@@ -13,7 +13,7 @@
   * [Formatting](#formatting)
   * [Nesting](#nesting)
   * [Avoid Tag Selectors](#avoid-tag-selectors)
-  * [Mixins Extends and Placeholders](#mixins-extends-and-palceholders)
+  * [Mixins Extends and Placeholders](#mixins-extends-and-placeholders)
   * [Colour Palette](#colour-palette)
 
 
