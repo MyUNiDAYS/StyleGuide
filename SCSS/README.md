@@ -54,9 +54,16 @@ These classes are used to define the layout of pages and determine how and where
 
 #### Modifiers
 
-Modifiers should be used for giving a component an alternative style and should always be prefixed with a double hyphen.
+Modifiers are a varient or extension of a class. They should be used for giving a component an alternative style (for example an alternative colour) and should always be prefixed with a double hyphen.
 
-`.--highlight`
+For example:
+
+```
+.--highlighted
+{
+	background-color: #1dd577;
+}
+```
 
 #### Formatting
 
