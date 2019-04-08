@@ -5,6 +5,8 @@
 
 # UNiDAYS SCSS Coding Style Guide
 
+[General Rules](#general-rules)
+
 [SCSS File Naming Convention](#scss-file-naming-convention)
 
 [SCSS Code Styles](#scss-code-styles)
@@ -16,6 +18,12 @@
   * [Mixins Extends and Placeholders](#mixins-extends-and-placeholders)
   * [Colour Palette](#colour-palette)
 
+### General Rules
+
+Keep your code DRY (Don't Repeat Yourself)
+The aim with this isn't to avoid *all* repetition but to minimise repeated code where it is thematically related and/or meaningful to do so. 
+
+The best approach is to write your code out fully (without using mixins, placeholders, variables etc) and then iterate; extracting out repeated chunks as necessary. 
 
 ### SCSS File Naming Convention
 
@@ -119,6 +127,8 @@ When nesting, use a child selector where possible.
 
 Use classnames whenever possible. Tag selectors are fine, but they lessen the reusability of your styles and could come at a small performance penalty.
 
+When you do need to use html tag selectors, try ensure they are nested within a class.  
+
 ```
 // Bad
 > picture
@@ -140,7 +150,7 @@ Use classnames whenever possible. Tag selectors are fine, but they lessen the re
 
 #### Mixins Extends and Placeholders
 
-Use these lightly, and only where it makes sense to use them. The aim is not to avoid *all* repetition but to minimise repetition where it is thematically related and/or meaningful to do so.
+Use these lightly, and only where it makes sense to use them. 
 
 For example, this is a bad implementation because while border-radius is being repeated, using a mixin for it actually creates more code than neccessary and these two classes are not thematically related. 
 
